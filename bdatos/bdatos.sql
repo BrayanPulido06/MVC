@@ -21,16 +21,10 @@ CREATE TABLE IF NOT EXISTS t_usuarios (
     CONSTRAINT uq_email UNIQUE (email)
 )ENGINE=InnoDB;
 
-<<<<<<< HEAD
 
-INSERT INTO t_usuarios VALUES ('admin', 'admin', 'admin@admin.com', 'admin1234', 'admin', 'admin');
-
+INSERT INTO t_usuarios VALUES (NULL, 'admin', 'admin', 'admin@admin.com', 'admin1234', 'admin', 'admin');
 
 
-=======
-INSERT INTO t_usuarios VALUES ('admin', 'admin', 'admin@admin.com', 'admin1234', 'admin', 'admin');
-
->>>>>>> e17159f25dd7a8e72bd8c9825122f024b5f5620f
 CREATE TABLE IF NOT EXISTS t_pedidos (
     id_pedido   INT (11)AUTO_INCREMENT  NOT NULL,
     id_usuario  INT (11)                NOT NULL,
